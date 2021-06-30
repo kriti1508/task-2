@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  overflow: hidden;
+  background: url("bg.png"), -webkit-linear-gradient(bottom, #a9a9a9 , #8a7f80);
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: 20px;
+  width: 500%;
+position: auto;
+top-right:30%;
+}
+::selection{
+  color: #fff;
+  background: #d43f8d;
+}
+.contact-form{
+      max-width: 350px;
+      margin:auto;
+      border-radius: 5px;
+      background: #87cefa;
+      font-family: sans-serif;
+      padding: 20px;
+      font-weight: bold;
+    }
+.container{
+  width: 330px;
+  margin:auto;
+  font-family:sans-serif;
+  background: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+  font-weight:bold;
+}
+.container header{
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 30px 0;
+}
+.container .form-outer{
+  width: 100%;
+  overflow: hidden;
+}
+.container .form-outer form{
+  display: flex;
+  width: 400%;
+}
+.form-outer form .page{
+  width: 25%;
+  transition: margin-left 0.3s ease-in-out;
+}
+.form-outer form .page .title{
+  text-align: left;
+  font-size: 25px;
+  font-weight: 500;
+}
+.form-outer form .page .field{
+  width: 330px;
+  height: 45px;
+  margin: 45px 0;
+  display: flex;
+  position: relative;
+}
+form .page .field .label{
+  position: absolute;
+  top: -30px;
+  font-weight: 500;
+}
+form .page .field input{
+  height: 100%;
+  width: 100%;
+  border: 5px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 15px;
+  font-size: 18px;
+}
+form .page .field select{
+  width: 100%;
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: 500;
+}
+form .page .field button{
+  width: 100%;
+  height: calc(100% + 5px);
+  border: none;
+  background: #648c11;
+  margin-top: -20px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: 0.5s ease;
+}
+form .page .field button:hover{
+  background: #000;
+}
+form .page .btns button{
+  margin-top: -20px!important;
+}
+form .page .btns button.prev{
+  margin-right: 3px;
+  font-size: 17px;
+}
+form .page .btns button.next{
+  margin-left: 3px;
+}
+.container .progress-bar{
+  display: flex;
+  margin: 40px 0;
+  user-select: none;
+}
+.container .progress-bar .step{
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+.container .progress-bar .step p{
+  font-weight: 500;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 8px;
+}
+.progress-bar .step .bullet{
+  height: 25px;
+  width: 25px;
+  border: 3px solid #009e00;
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  transition: 0.2s;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 25px;
+}
+.progress-bar .step .bullet.active{
+  border-color: #006100;
+  background: #00bd00;
+}
+.progress-bar .step .bullet span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.progress-bar .step .bullet.active span{
+  display: none;
+}
+.progress-bar .step .bullet:before,
+.progress-bar .step .bullet:after{
+  position: absolute;
+  content: '';
+  bottom: 11px;
+  right: -81px;
+  height: 3px;
+  width: 80px;
+  background-color: #006100;
+}
+.progress-bar .step .bullet.active:after{
+  background: #009e00;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 0.3s linear forwards;
+}
+@keyframes animate {
+  100%{
+    transform: scaleX(1);
+  }
+}
+.progress-bar .step:last-child .bullet:before,
+.progress-bar .step:last-child .bullet:after{
+  display: none;
+}
+.progress-bar .step p.active{
+  color: #009e00;
+  transition: 0.2s linear;
+}
+.progress-bar .step .check{
+  position: absolute;
+  left: 50%;
+  top: 70%;
+  font-size: 15px;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+.progress-bar .step .check.active{
+  display: block;
+  color: #fff;
+}
+.payment{
+  padding-left: 50px;
+  margin:center;
+
+
+}
+h2{
+  margin:-200px;
+  padding-top: 460px;
+  padding-right: 500px;
+  margin-right: 1000px;
+  text-align: center;
+ 
+}
+.container .progress-bar .html input{
+  height: 100%;
+  width: 100%;
+  border: 5px solid lightgrey;
+  border-radius: 5px;
+  padding-left: 2px;
+  font-size: 18px;
+}
